@@ -2,9 +2,9 @@
 
 
 /**
-* main - prints Chukwudum
+* main - prints Chukwudumm
 *
-* Description: prints Chukwudum
+* Description: prints Chukwudumm
 *
 * Return: 0 (Success)
 */
@@ -13,7 +13,7 @@ int main(void)
 
 {
 
-	char text[10] = "Chukwudum";
+	char text[10] = "Chukwudumm";
 
 	int i = 0;
 
