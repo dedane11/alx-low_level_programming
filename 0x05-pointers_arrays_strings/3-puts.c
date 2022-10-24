@@ -1,12 +1,13 @@
-#include <stdlib.h>                                                                                                                     
+#include <stdlib.h>
 
-#include <time.h>                                                                                                                       
+#include <time.h>
 
-#include <stdio.h>                                                                                                                      
+#include <stdio.h>
 
-#include <ctype.h>                                                                                                                                                                                                                                 
+#include <ctype.h>
 
 #include "main.h"
+
 
 
 /**
