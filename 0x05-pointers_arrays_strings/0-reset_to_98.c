@@ -1,16 +1,12 @@
-#include <stdlib.h>                                                                                                                     
+#include <stdlib.h>
 
-#include <time.h>                                                                                                                       
+#include <time.h>
 
-#include <stdio.h>                                                                                                                      
+#include <stdio.h>
 
-#include <ctype.h>                                                                                                                                                                                                                                 
+#include <ctype.h>
 
 #include "main.h"
-
-
-
-
 
 /**
 * reset_to_98 - Updates the value it points to 98
