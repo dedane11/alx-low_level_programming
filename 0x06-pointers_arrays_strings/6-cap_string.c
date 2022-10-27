@@ -29,11 +29,14 @@ char *cap_string(char *s)
 
 	while (s[a])
 
-	{
+{
 
 		i = 0;
 
+	{
 		while (i < cspc)
+
+	}
 
 		{
 	if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
