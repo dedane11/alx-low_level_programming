@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 
 #include <time.h>
 
@@ -41,11 +41,9 @@ int main(void)
 * - only one statement
 */
 
+*(p + 5) = 98;
 
-
-	*(p + 5) = 98;
-
-	/* ...so that this prints 98\n */
+/* ...so that this prints 98\n */
 
 	printf("a[2] = %d\n", a[2]);
 

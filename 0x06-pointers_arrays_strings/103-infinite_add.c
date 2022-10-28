@@ -51,19 +51,12 @@ void rev_string(char *s)
 	while (i < size)
 
 	{
-
 		temp = *(s + i);
-
 		*(s + i) = *(s + size - 1);
-
 		*(s + size - 1) = temp;
-
 		i++;
-
 		size--;
-
 	}
-
 }
 
 
@@ -84,19 +77,12 @@ int returnRes(int sum, int plusOne)
 	int res;
 
 	if (sum == 9 && plusOne)
-
 		res = 0;
-
 	else if ((sum >= 10 && plusOne) || (sum < 9 && plusOne))
-
 		res = (sum % 10) + 1;
-
 	else
-
 		res = sum % 10;
-
 	return (res);
-
 }
 
 
@@ -115,19 +101,12 @@ int returnPlusOne(int sum, int plusOne)
 {
 
 	if (sum > 9)
-
 		plusOne = 1;
-
 	else if (sum == 9 && plusOne)
-
 		plusOne = 1;
-
 	else
-
 		plusOne = 0;
-
 	return (plusOne);
-
 }
 
 
@@ -158,35 +137,20 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (len1 > 0 || len2 > 0)
 
 	{
-
 		first = len1 > 0 ? (*(n1 + len1 - 1) - '0') : 0;
-
 		second = len2 > 0 ? (*(n2 + len2 - 1) - '0') : 0;
-
 		sum = first + second;
-
 		res = returnRes(sum, plusOne);
-
 		plusOne = returnPlusOne(sum, plusOne);
-
 		*(ptr + i) = res + '0';
-
 		len1--;
-
 		len2--;
-
 		i++;
-
 	}
 
 	if (plusOne)
-
 		*(ptr + i) = 1 + '0';
-
 	ptr[++i] = '\0';
-
 	rev_string(ptr);
-
 	return ((size_r > _strlen(ptr)) ? ptr : 0);
-
 }
